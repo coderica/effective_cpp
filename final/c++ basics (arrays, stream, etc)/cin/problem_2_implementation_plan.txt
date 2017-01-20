@@ -1,0 +1,3 @@
+Implementation plan in pseudocode for Week 2 Problem 2
+
+DICTIONARY = array of 5-letter words RAND = generate a random number WORD = a random word from dictionary using RAND as index cout explaining the game cout asking user for a guess GUESS = user input ATTEMPTS = count of user guesses, starting at 0 while GUESS does not equal WORD and ATTEMPTS < 10 	CORRECT = empty array/string?? 	for each letter a in GUESS, 		if GUESS[a] is in WORD 			add GUESS[a] to CORRECT 			remove single instance of letter from WORD 	cout CORRECT letters 	cout asking user for another guess 	GUESS = user input 	add 1 to ATTEMPTS when guessing is over 	if GUESS equals WORD 		cout user guessed it correctly 	else 		cout user loses and could not guess it within the ATTEMPT limit

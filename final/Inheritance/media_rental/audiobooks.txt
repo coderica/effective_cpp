@@ -1,0 +1,7 @@
+The Hitchhiker's Guide to the Galaxy,Douglas Adams,4,1016
+The Lord of the Rings,J.R.R. Tolkien,10,1017
+Harry Potter,J.K. Rowling,12,1018
+Inferno,Dante,6,1019
+Dracula,Bram Stoker,5,1020
+Fairytales,Brothers Grimm,8,1021
+The Hunger Games,Susan Collins,3,1022

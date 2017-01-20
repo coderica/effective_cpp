@@ -1,0 +1,8 @@
+first,last,id,pay
+Dan,Druff,101,75,active
+Joe ,Walter,108,63,active
+Cole ,Rabby,115,54,active
+Joe ,Kerr,126,54,active
+Patty ,Ofurniter,132,26,inactive
+Sue,Flay,138,24,active
+Kerry,Oki,148,32,inactive

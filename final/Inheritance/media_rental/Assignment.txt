@@ -1,0 +1,56 @@
+Your task is to create a object oriented system in C++ to manage a NetFlix–like media rental company
+that mails audiobooks, games and movies to its members. Members must return items within the
+allotted time.
+
+Entities are as follows...
+
+Audio Books: Must be returned within 30 days. After that there is a fee of 50 cents per day.
+    Members: item title, title, author1, number of CD’s and product number
+    File example: The Hitchhiker's Guide to the Galaxy,Douglas Adams,4,1001
+
+Movies: Must be returned within 7 days. After that there is a fine of 50 cents per day.
+    Members: title, primary actor or actress, running time and product number
+    File example: The Matrix,Keanu Reeves,136,1002
+
+Games: Must be returned within 14 days. After that there is a fine of $1 per day.
+    Members: title, platform, and product number
+    File example: Super Mario Bros,Nintendo,1003
+
+You may assume that the company only has one of each item – for example, only one copy of the movie: “Groundhog Day”. You may assume that there is only one of each characteristic per item, for example, one author.
+
+Members: The member entity keeps track of items currently checked out. Members can check out and return items. Regular members can only have one item at a time. You do not have to maintain a history of transactions
+    Members: member name, id number, is premium, item number checked out, timestamp, item checked out, timestamp
+    File example: John Doe,21998,false,1002,11-4-2016
+
+- Premium Members: Same as members but they can get two items at a time, and the first $2.50 is waived for any late fee.
+- When a member makes a request for an item, if it is available, it is checked out by them and the transaction is time-stamped. If it is not available, they go on a wait list for the item.
+- When a member returns an item, fees are calculated as appropriate. A message is displayed with the name of the member, the returned item name and any fees assessed. (Note: you can assume all fees are paid immediately via a backend system for which you are not responsible).
+- If there is a wait list, the item is then checked out automatically to the next eligible member (eligible = doesn’t already have something checked out).
+
+Transactions File - request, member number, product number return, product number
+    example:    return: 1002
+                request: 21998,1003
+
+Actions to be implemented:
+    add new item
+    add new member
+    member checks out an item
+    member checks in an item
+    report all currently available inventory include the name and type of item
+    report all users with nothing checked out
+    report all items checked out and the member that has it.
+    report all members that are currently late, what item is checked out, and what the current late fee is (given the current date).
+
+Use data files to populate the initial data items. Include at least 5 of each item. For other activity, such as to generate reports, etc, you may just call the appropriate functions within a test program.
+
+Be sure to test all features of the system.
+Ground Rules:
+    The course has covered all material that you need for this assignment.
+    You must use inheritance.
+    You may not use templates except in conjunction with use of an STL class (see next rule).
+    You may not use any elements from the STL directly except for vector.
+
+Rubric:
+    Runs and meets spec: 60
+    Quality of class hierarchy: 15
+    Quality of code: 25
